@@ -1,0 +1,41 @@
+#home{
+    div{
+        display: flex;
+        
+    }
+    main{
+        margin: 40px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        background-color: gray;
+        border-radius: 40px;
+        flex: 1;
+        text-align: left;
+        h2{
+            color:white;
+        }
+    }
+}
+
+#line {
+    position: relative;
+    width: 90%;
+    min-height: 2px;
+    background-color: #ffffff;
+    margin: 20px auto; 
+    content: '';
+}
+
+#line::before,
+#line::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left:10%;
+    height: 1px;
+    width: 80%;
+    background-color: #fff;
+}
+#line::before{
+    top:-5px;
+}
